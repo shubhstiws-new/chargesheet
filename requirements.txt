@@ -1,0 +1,19 @@
+# Core ML libraries
+torch>=2.0.0
+transformers>=4.36.0
+datasets>=2.14.0
+accelerate>=0.25.0
+peft>=0.7.0  # Parameter-Efficient Fine-Tuning (includes LoRA)
+
+# Training utilities
+bitsandbytes>=0.41.0  # For 8-bit/4-bit quantization
+trl>=0.7.0  # Transformer Reinforcement Learning (has SFTTrainer)
+
+# Evaluation and monitoring
+wandb  # Optional: for tracking experiments
+tensorboard
+
+# Utilities
+pandas
+numpy
+tqdm
