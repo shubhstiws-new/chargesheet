@@ -1,5 +1,5 @@
 """
-04_inference.py - Test your fine-tuned EV financial extractor
+03_inference.py - Test your fine-tuned EV financial extractor
 
 This script loads your LoRA adapter and runs inference on new reports.
 """

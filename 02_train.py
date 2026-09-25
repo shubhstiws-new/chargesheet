@@ -1,5 +1,5 @@
 """
-03_train.py - Fine-tune a model with LoRA for EV financial extraction
+02_train.py - Fine-tune a model with LoRA for EV financial extraction
 
 =============================================================================
 WHAT THIS SCRIPT DOES (High Level)
@@ -42,7 +42,7 @@ MODEL_NAME = "Qwen/Qwen2.5-3B-Instruct"
 DATA_PATH = "data/train.jsonl"
 OUTPUT_DIR = "models/ev-extractor-lora"
 
-# LoRA Hyperparameters (see 01_THEORY.md for explanation)
+# LoRA Hyperparameters
 LORA_R = 16          # Rank: higher = more capacity, more memory
 LORA_ALPHA = 32      # Scaling factor: typically 2x rank
 LORA_DROPOUT = 0.05  # Regularization: prevents overfitting
@@ -294,7 +294,8 @@ def main():
     # ==========================================================================
     print("""
 1. Test your model:
-   python 04_inference.py
+   python 03_inference.py
+   python 04_evaluate.py --mode lora
 
 2. The LoRA adapter is saved separately from the base model.
    To use it, you load base model + adapter together.
@@ -303,9 +304,6 @@ def main():
    - Add more training examples (aim for 50-100)
    - Train for more epochs
    - Adjust LoRA rank (higher = more capacity)
-
-4. To export for Ollama:
-   python 05_export_ollama.py
 """)
 
 

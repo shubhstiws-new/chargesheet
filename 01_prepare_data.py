@@ -1,5 +1,5 @@
 """
-02_prepare_data.py - Create training data for EV Financial Extractor
+01_prepare_data.py - Create training data for EV Financial Extractor
 
 THEORY RECAP:
 Fine-tuning teaches the model input→output patterns.
@@ -344,7 +344,7 @@ def main():
     print("=" * 60)
     print("1. Review the examples - add more for better results!")
     print("2. Run: pip install -r requirements.txt")
-    print("3. Run: python 03_train.py")
+    print("3. Run: python 02_train.py")
     print()
 
 

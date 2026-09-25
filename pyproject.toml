@@ -1,7 +1,7 @@
 [project]
-name = "ev-financial-extractor"
+name = "chargesheet"
 version = "0.1.0"
-description = "Add your description here"
+description = "LoRA fine-tuning of a 3B model for structured financial extraction from EV company reports"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = []
